@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://open.spotify.com/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Soptify App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left p-1 rounded">
+            <div class="home rounded m-1 p-1">
+                <div class="logo">
+                    <img class="invert" src="./svg/logo.svg" alt="">
+                    <img class="cancel invert" src="./svg/cancel.svg" alt="">
+                </div>
+                <ul>
+                    <li><img class="invert" src="./svg/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="./svg/search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="./svg/playlist.svg" alt="playlist">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.soptify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.soptify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.soptify.com/jp/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.soptify.com/jp/cookies/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.soptify.com/jp/privacy-policy/#s3"><span>About</span></a></div>
+                    <div><a href="https://www.soptify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right  rounded ">
+            <div class="header">
+                <div class="nav">
+                    <img class="hamburger invert" src="./svg/hamburger.svg" alt="">
+                    <img class="invert" src="./svg/left.svg" alt="left">
+                    <img class="invert" src="./svg/right.svg" alt="right">
+                </div>
+                <div class="buttons">
+                    <button class="SignupBtn">Signup</button>
+                    <button class="LoginBtn">Login</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContainer">
+                    <div data-folder="ncs" class="card ">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                <!-- Background Circle -->
+                                <circle cx="12" cy="12" r="12" fill="#008000" />
+
+                                <!-- Circle Outline -->
+                                <circle cx="12" cy="12" r="10" stroke="#000000" stroke-width="1.5" fill="none" />
+
+                                <!-- Inner play part -->
+                                <path
+                                    d="M15.4531 12.3948C15.3016 13.0215 14.5857 13.4644 13.1539 14.3502C11.7697 15.2064 11.0777 15.6346 10.5199 15.4625C10.2893 15.3913 10.0793 15.2562 9.90982 15.07C9.5 14.6198 9.5 13.7465 9.5 12C9.5 10.2535 9.5 9.38018 9.90982 8.92995C10.0793 8.74381 10.2893 8.60868 10.5199 8.53753C11.0777 8.36544 11.7697 8.79357 13.1539 9.64983C14.5857 10.5356 15.3016 10.9785 15.4531 11.6052C15.5156 11.8639 15.5156 12.1361 15.4531 12.3948Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linejoin="round" fill="#333" />
+                            </svg>
+                        </div>
+                        <img src="./svg/cardPhoto.jpg" alt="card image">
+                        <h2>Sleep</h2>
+                        <p>Gentle Ambient piano to help you fall asleep</p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="playbarPart">
+                    <div class="playbar">
+                        <div class="songinfo"></div>
+                        <div class="songbutton">
+                            <img id="previous" width="45" src="./svg/presong.svg" alt="presong">
+                            <img id="play" width="45" src="./svg/play.svg" alt="play">
+                            <img id="next" width="45" src="./svg/nextsong.svg" alt="nextsong">
+                        </div>
+                        <div class="songtime">
+                            00:00/00:00
+                        </div>
+                        <div class="volume">
+                            <img class=" volume-img invert" width="23" src="./svg/volume.svg" alt="">
+                            <input class="invert range" type="range">
+                        </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
